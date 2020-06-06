@@ -3,7 +3,6 @@ import Main from './Main'
 import './App.css';
 import SideBar from './Navbar'
 import Skills from './Skills'
-import Experience from './Experience'
 import Projects  from './Projects'
 import {Route} from 'react-router-dom'
 function App() {
