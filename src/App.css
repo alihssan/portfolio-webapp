@@ -82,7 +82,7 @@
     font-size: 20px;
   }
 }
-@media (max-height:740px){
+@media (min-height:740px){
   .cover{
     height: 740px;
   }
@@ -91,6 +91,18 @@
   }
   .sidebar{
     height: 740px;
+  }
+  
+}
+@media (min-height:812px){
+  .cover{
+    height: 812px;
+  }
+  .cover2{
+    height: 812px;
+  }
+  .sidebar{
+    height: 812px;
   }
   
 }
