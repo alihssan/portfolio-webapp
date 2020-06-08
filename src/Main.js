@@ -11,7 +11,47 @@ export default class Main extends Component{
         return(
             <div className="cover">
                 <Typist><h1>Hello World By Ali Hassan,</h1></Typist>
-                <Fade bottom><h3><MdDeveloperMode size={50} color={"red"}/>&nbsp;&nbsp;Front End Web Developer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BsLightningFill size={50} color={"yellow"}/>&nbsp;&nbsp;Electrical Engineer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FaRobot size={50} color={"navy"}/>&nbsp;&nbsp; Deep Learning Enthusiast  </h3></Fade>
+                <Fade bottom>
+                    <div className="info1">
+                        <h3>
+                            <MdDeveloperMode 
+                                size={50} 
+                                color={"red"}
+                                />&nbsp;&nbsp;
+                                Front End Web Developer
+                                &nbsp;&nbsp;&nbsp;
+                                |
+                                &nbsp;&nbsp;
+                                <BsLightningFill size={50} color={"yellow"}/>
+                                &nbsp;&nbsp;
+                                Electrical Engineer
+                                &nbsp;&nbsp;&nbsp;
+                                |
+                                &nbsp;&nbsp;
+                                <FaRobot size={50} color={"navy"}/>
+                                &nbsp;&nbsp;
+                                Deep Learning Enthusiast  
+                        </h3>
+                    </div>
+                </Fade>
+
+                <div className="info">
+                <h3>
+                        <MdDeveloperMode 
+                            size={50} 
+                            color={"red"}
+                            />&nbsp;&nbsp;
+                            Front End Web Developer
+                            <br/>
+                            <BsLightningFill size={50} color={"yellow"}/>
+                            &nbsp;&nbsp;
+                            Electrical Engineer
+                            <br/>
+                            <FaRobot size={50} color={"navy"}/>
+                            &nbsp;&nbsp;
+                            Deep Learning Enthusiast  
+                    </h3>
+                </div>
             </div>
         )
     }

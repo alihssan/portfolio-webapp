@@ -3,7 +3,7 @@
   background-color: black;
   float: right;
   width:95%;
-  height:639px;
+  height:620px;
 }
 .sidebar{
   background-color: #1f1f1f;
@@ -12,7 +12,7 @@
   height:639px;
 
 }
-.a,.b,.c{
+.a,.b,.c,.d,.e{
   width: 100%;
   height:60px;
   border-top-left-radius: 5px;
@@ -21,7 +21,7 @@
 
 }
 .a{
-  margin-top: 221.5px;
+  margin-top: 101.5px;
 
 }
 .cover h1{
@@ -39,4 +39,60 @@
   font-weight: 100;
   font-family: 'Times New Roman', Times, serif;
   
+}
+.info{
+  display: none;
+}
+@media (max-width:1000px){
+  .cover h1{
+    font-size: 50px;
+  }
+  .cover h3{
+    font-size: 20px;
+  }
+}
+@media (max-height:740px){
+  .cover{
+    height: 740px;
+  }
+  .sidebar{
+    height: 740px;
+  }
+  
+}
+@media (max-width:850px){
+  .cover{
+    width: 92%;
+
+  }
+  .sidebar{
+    width: 8%;
+  }
+}
+@media (max-width:600px){
+  .cover{
+    width: 90%;
+
+  }
+  .sidebar{
+    width: 10%;
+  }
+  .info1{
+    display: none;
+  }
+  .info{
+    display: block;
+  }
+  .cover h1{
+    font-size: 40px;
+  }
+}
+@media (max-width:500px){
+  .cover{
+    width: 88%;
+
+  }
+  .sidebar{
+    width: 12%;
+  }
 }
