@@ -5,61 +5,50 @@ import {FiBook} from 'react-icons/fi'
 import {Link} from 'react-router-dom'
 import {FiGithub} from 'react-icons/fi'
 import {GrLinkedin} from 'react-icons/gr'
-
+import {withRouter} from 'react-router-dom'
 class SideBar extends Component{
     state={
-        home:true,
-        about:false,
-        projects:false,
         github:false,
         linkedin:false
     }
-    handlehome=()=>{
-        this.setState({home:true,about:false,projects:false,github:false,linkedin:false})
-    }
-    handleabout=()=>{
-        this.setState({home:false,about:true,projects:false,github:false,linkedin:false})
-    }
-    handleprojects=()=>{
-        this.setState({home:false,about:false,projects:true,github:false,linkedin:false})
-    }
     handlegithub=()=>{
-        this.setState({home:false,about:false,projects:false,github:true,linkedin:false})
+        this.setState({github:true})
     }
     handlelinkedin=()=>{
-        this.setState({home:false,about:false,projects:false,github:false,linkedin:true})
+        this.setState({linkedin:true})
 
     }
     render(){
         const style={
             marginTop:'7px',
         }
+        console.log(this.props.location.pathname)
     return(
   <div className="sidebar">
-    <Link to="/" onClick={this.handlehome}>
+    <Link to="/">
         <div 
             className="a" 
-            style={{backgroundColor: this.state.home===true ? "black" : "transparent"}}
+            style={{backgroundColor: this.props.location.pathname==='/' ? "black" : "transparent"}}
             > 
             <center> 
                 <FaHome size={40} color="white" style={style}/>
             </center>
         </div>
     </Link>
-    <Link to="/about" onClick={this.handleabout}> 
+    <Link to="/about"> 
         <div 
             className="b" 
-            style={{backgroundColor: this.state.about===true ? "black" : "transparent"}}
+            style={{backgroundColor: this.props.location.pathname==='/about' ? "black" : "transparent"}}
         > 
             <center>
                 <BsInfoCircle size={40} color="white" style={style}/>
             </center>
         </div>
     </Link>
-    <Link to="/projects" onClick={this.handleprojects}>
+    <Link to="/skills">
         <div 
             className="c" 
-            style={{backgroundColor: this.state.projects===true ? "black" : "transparent"}}
+            style={{backgroundColor: this.props.location.pathname==='/skills' ? "black" : "transparent"}}
         > 
             <center>
                 <FiBook size={40} color="white" style={style}/>
@@ -91,4 +80,4 @@ class SideBar extends Component{
 )
     }
 }
-export default SideBar;
+export default withRouter(SideBar);

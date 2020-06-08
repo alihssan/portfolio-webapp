@@ -13,6 +13,13 @@
   width:95%;
   height:638px;
 }
+.cover3{
+  background-color: black;
+  float: right;
+  width:95%;
+  height:780px;
+
+}
 .sidebar{
   background-color: #1f1f1f;
   float: left;
@@ -76,6 +83,17 @@
   margin-left: 120px;
   margin-right: 140px;
 }
+.skills{
+  width:60%;
+  height:550px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 40px;
+}
+.skills h2{
+  font-size: 30px;
+  color: white;
+}
 @media (max-width:1000px){
   .cover h1{
     font-size: 50px;
@@ -91,6 +109,7 @@
   .cover2{
     height: 740px;
   }
+  
   .sidebar{
     height: 740px;
   }

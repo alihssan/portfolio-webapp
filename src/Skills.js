@@ -1,25 +1,25 @@
 import React,{Component} from 'react'
-import bracketopen from './bracketopen.png'
-import bracketclose from './bracketclose.png'
+import { Progress } from 'semantic-ui-react'
 import Fade from 'react-reveal'
-
-
 
 
 export default class Skills extends Component{
     render(){
         return(
-            <div className="cover2">
-                <img className="open" src={bracketopen} alt="open"/>
-                <h1 className="about">About Me,</h1>
-                <Fade bottom><p>I am a Frontend Web Developer with Experience in 
-                working with New Frontend Technologies and Looking forward to add Backend 
-                and Cloud Native Technologies to my developers Stack.
-                Highly Passionate About Applying and Learning DL/ML on Cloud Native Mobile & Webs.
-                Exploring IoT and Highly Interested in Integrating these Technologies into Single 
-                Product.  </p></Fade>
-                <img className="close" src={bracketclose} alt="close"/>
-
+            <div className="cover3">
+                <div className="skills">
+                    <Fade left><h2>HTML</h2></Fade>
+                    <Fade bottom><Progress percent={100} inverted color='red' size="large" progress /></Fade>
+                    <Fade left><h2>CSS</h2></Fade>
+                    <Fade bottom><Progress percent={100} inverted color='orange' size="large" progress /></Fade>
+                    <Fade left><h2>Javascript(ES6)</h2></Fade>
+                    <Fade bottom><Progress percent={90} inverted color='yellow' size="large" progress /></Fade>
+                    <Fade left><h2>Python</h2></Fade>
+                    <Fade bottom><Progress percent={85} inverted color='green' size="large" progress /></Fade>
+                    <Fade left><h2>ReactJS</h2></Fade>
+                    <Fade bottom><Progress percent={85} inverted color='blue' size="large" progress /></Fade>
+                    
+                </div>
             </div>
         )
     }
