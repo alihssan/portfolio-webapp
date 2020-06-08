@@ -1,15 +1,17 @@
-
+.Appli{
+  background-color: black;
+}
 .cover{
   background-color: black;
   float: right;
   width:95%;
-  height:620px;
+  height:638px;
 }
 .cover2{
   background-color: black;
   float: right;
   width:95%;
-  height:620px;
+  height:638px;
 }
 .sidebar{
   background-color: #1f1f1f;
@@ -103,6 +105,30 @@
   }
   .sidebar{
     height: 812px;
+  }
+  
+}
+@media (min-height:1024px){
+  .cover{
+    height: 1024px;
+  }
+  .cover2{
+    height: 1024px;
+  }
+  .sidebar{
+    height: 1024px;
+  }
+  
+}
+@media (min-height:667px){
+  .cover{
+    height: 670px;
+  }
+  .cover2{
+    height: 670px;
+  }
+  .sidebar{
+    height: 670px;
   }
   
 }

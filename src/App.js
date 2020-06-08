@@ -7,7 +7,7 @@ import Projects  from './Projects'
 import {Route} from 'react-router-dom'
 function App() {
   return (
-    <div className="App">
+    <div className="Appli">
       <SideBar/>
       <Route path="/" exact render={()=>
                 <Main/>
