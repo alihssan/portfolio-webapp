@@ -36,7 +36,7 @@ export default class Main extends Component{
                 </Fade>
 
                 <div className="info">
-                <h3>
+                <Fade right><h3>
                         <MdDeveloperMode 
                             size={50} 
                             color={"red"}
@@ -50,7 +50,7 @@ export default class Main extends Component{
                             <FaRobot size={50} color={"navy"}/>
                             &nbsp;&nbsp;
                             Deep Learning Enthusiast  
-                    </h3>
+                    </h3></Fade>
                 </div>
             </div>
         )
